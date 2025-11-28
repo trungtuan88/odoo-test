@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- 10 Demo Users on Device -->
+        <!-- Reusing demo employees from hr module instead of creating new ones -->
+
+        <record id="demo_user_on_device_001" model="user.on.device">
+            <field name="name">Administrator</field>
+            <field name="device_id" ref="demo_attendance_device_main"/>
+            <field name="pin">001</field>
+            <field name="privilege">0</field>
+            <field name="verify">-1</field>
+            <field name="employee_id" ref="hr.employee_admin"/>
+        </record>
+
+        <record id="demo_user_on_device_002" model="user.on.device">
+            <field name="name">Abigail Peterson</field>
+            <field name="device_id" ref="demo_attendance_device_main"/>
+            <field name="pin">002</field>
+            <field name="privilege">0</field>
+            <field name="group">1</field>
+            <field name="verify">-1</field>
+        </record>
+
+        <record id="demo_user_on_device_003" model="user.on.device">
+            <field name="name">Audrey Peterson</field>
+            <field name="device_id" ref="demo_attendance_device_main"/>
+            <field name="pin">003</field>
+            <field name="privilege">0</field>
+            <field name="group">1</field>
+            <field name="verify">-1</field>
+        </record>
+
+        <record id="demo_user_on_device_004" model="user.on.device">
+            <field name="name">Eli Lambert</field>
+            <field name="device_id" ref="demo_attendance_device_main"/>
+            <field name="pin">004</field>
+            <field name="privilege">0</field>
+            <field name="group">1</field>
+            <field name="verify">-1</field>
+        </record>
+
+        <record id="demo_user_on_device_005" model="user.on.device">
+            <field name="name">Rachel Perry</field>
+            <field name="device_id" ref="demo_attendance_device_main"/>
+            <field name="pin">005</field>
+            <field name="privilege">0</field>
+            <field name="group">1</field>
+            <field name="verify">-1</field>
+        </record>
+
+        <record id="demo_user_on_device_006" model="user.on.device">
+            <field name="name">Keith Byrd</field>
+            <field name="device_id" ref="demo_attendance_device_main"/>
+            <field name="pin">006</field>
+            <field name="privilege">0</field>
+            <field name="group">1</field>
+            <field name="verify">-1</field>
+        </record>
+
+        <record id="demo_user_on_device_007" model="user.on.device">
+            <field name="name">Sharlene Rhodes</field>
+            <field name="device_id" ref="demo_attendance_device_main"/>
+            <field name="pin">007</field>
+            <field name="privilege">0</field>
+            <field name="group">1</field>
+            <field name="verify">-1</field>
+        </record>
+
+        <record id="demo_user_on_device_008" model="user.on.device">
+            <field name="name">Ernest Reed</field>
+            <field name="device_id" ref="demo_attendance_device_main"/>
+            <field name="pin">008</field>
+            <field name="privilege">0</field>
+            <field name="group">1</field>
+            <field name="verify">-1</field>
+        </record>
+
+        <record id="demo_user_on_device_009" model="user.on.device">
+            <field name="name">Toni Jimenez</field>
+            <field name="device_id" ref="demo_attendance_device_main"/>
+            <field name="pin">009</field>
+            <field name="privilege">0</field>
+            <field name="group">1</field>
+            <field name="verify">-1</field>
+        </record>
+
+        <record id="demo_user_on_device_010" model="user.on.device">
+            <field name="name">Anita Oliver</field>
+            <field name="device_id" ref="demo_attendance_device_main"/>
+            <field name="pin">010</field>
+            <field name="privilege">0</field>
+            <field name="group">1</field>
+            <field name="verify">-1</field>
+        </record>
+
+    </data>
+</odoo>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="group_attendance_devices_manager" model="res.groups">
+            <field name="name">Attendance Device Manager</field>
+            <field name="category_id" ref="base.module_category_usability"/>
+            <field name="comment">The users in this group will have full access rights to attendance machines and their data.</field>
+        </record>
+
+        <record id="hr_attendance.group_hr_attendance_manager" model="res.groups">
+            <field name="implied_ids" eval="[(4, ref('group_attendance_devices_manager'))]"/>
+        </record>
+
+        <record id="attendance_device_company_rule" model="ir.rule">
+            <field name="name">Attendance Device - Multi-Company Rule</field>
+            <field name="model_id" ref="model_attendance_device"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+        <record id="user_on_device_company_rule" model="ir.rule">
+            <field name="name">User on Device - Multi-Company Rule</field>
+            <field name="model_id" ref="model_user_on_device"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('device_id.company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+        <record id="user_attendance_line_company_rule" model="ir.rule">
+            <field name="name">User Attendance Line - Multi-Company Rule</field>
+            <field name="model_id" ref="model_user_attendance_line"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('device_id.company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+        <record id="user_bio_template_company_rule" model="ir.rule">
+            <field name="name">User Bio Template - Multi-Company Rule</field>
+            <field name="model_id" ref="model_user_bio_template"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('device_id.company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+        <record id="device_trans_flag_company_rule" model="ir.rule">
+            <field name="name">Device Transfer Flag - Multi-Company Rule</field>
+            <field name="model_id" ref="model_device_trans_flag"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('device_id.company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+        <record id="device_trans_time_company_rule" model="ir.rule">
+            <field name="name">Device Transfer Time - Multi-Company Rule</field>
+            <field name="model_id" ref="model_device_trans_time"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('device_id.company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+        <record id="command_to_device_company_rule" model="ir.rule">
+            <field name="name">Command to Device - Multi-Company Rule</field>
+            <field name="model_id" ref="model_command_to_device"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('device_id.company_id', 'in', company_ids + [False])]</field>
+        </record>
+    </data>
+</odoo>

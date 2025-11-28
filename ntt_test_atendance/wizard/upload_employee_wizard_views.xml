@@ -1,0 +1,55 @@
+<odoo>
+	<data>
+		<record id="upload_employee_wizard_view_form" model="ir.ui.view">
+			<field name="name">Upload Employee Wizard</field>
+			<field name="model">upload.employee.wizard</field>
+			<field name="arch" type="xml">
+				<form string="Upload Employees">
+					<div class="alert alert-info text-center" role="alert">
+						This wizard will create commands to upload the selected employees to the attendance devices you have chosen.
+						<br />
+						You can track the progress of this process in the device's command list.
+					</div>
+					<field name="employee_lines" nolabel="1" context="{'default_device_ids': device_ids}">
+						<list editable="bottom" multi_edit="1">
+							<field name="employee_id" widget="many2one_avatar"/>
+							<field name="device_ids"
+								widget="many2many_tags"
+								domain="[('state', '=', 'confirmed')]"/>
+						</list>
+					</field>
+					<footer>
+						<button name="action_upload_employee" type="object"
+							groups="hr_attendance.group_hr_attendance_manager"
+							string="Upload Employees" class="oe_highlight" />
+						<button special="cancel" string="Cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+
+		<record id="select_device_wizard_view_form" model="ir.ui.view">
+			<field name="name">Select Device Wizard</field>
+			<field name="model">select.device.wizard</field>
+			<field name="arch" type="xml">
+				<form string="Select Devices">
+					<div class="alert alert-info text-center" role="alert">
+						Select the devices you want to upload the employees to.
+					</div>
+					<group>
+						<field name="device_ids"
+							widget="many2many_tags"
+							domain="[('state', '=', 'confirmed')]"/>
+					</group>
+					<footer>
+						<button name="action_select_device" type="object"
+							groups="hr_attendance.group_hr_attendance_manager"
+							string="Select Devices" class="oe_highlight" />
+						<button special="cancel" string="Cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+
+	</data>
+</odoo>

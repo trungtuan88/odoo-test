@@ -1,0 +1,20 @@
+<odoo>
+    <record id="attendance_download_wizard_form_view" model="ir.ui.view">
+        <field name="name">attendance.download.wizard.form</field>
+        <field name="model">attendance.download.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Attendance Download">
+                <sheet>
+                    <group>
+                        <field name="date_from" />
+                        <field name="date_to" />
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_download_attendance" string="Download" type="object" class="btn-primary" />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

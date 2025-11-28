@@ -1,0 +1,24 @@
+<odoo>
+    <data noupdate="1">
+
+        <!-- Normal Attendance -->
+        <record id="attendance_status_template_normal_check_in" model="attendance.status.template">
+            <field name="name">Standard shift check-in</field>
+            <field name="type">checkin</field>
+            <field name="code">0</field>
+        </record>
+
+        <record id="attendance_status_template_normal_check_out" model="attendance.status.template">
+            <field name="name">Standard shift check-out</field>
+            <field name="type">checkout</field>
+            <field name="code">1</field>
+        </record>
+
+        <record id="attendance_status_template_unknown" model="attendance.status.template">
+            <field name="name">Unknown Punch State</field>
+            <field name="type">unknown</field>
+            <field name="code">255</field>
+        </record>
+
+    </data>
+</odoo>

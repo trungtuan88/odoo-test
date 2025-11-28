@@ -1,0 +1,51 @@
+<odoo>
+	<data>
+        <record id="view_attendance_tree_inherit" model="ir.ui.view">
+			<field name="name">hr.attendance.tree</field>
+			<field name="model">hr.attendance</field>
+			<field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>
+			<field name="arch" type="xml">
+				<field name="check_in" position="after">
+					<field name="checkin_device_id" optional="hide" />
+				</field>
+				<field name="check_out" position="after">
+					<field name="checkout_device_id" optional="hide" />
+				</field>
+			</field>
+		</record>
+
+		<record id="hr_attendance_view_form_inherit" model="ir.ui.view">
+			<field name="name">hr.attendance.form.inherit</field>
+			<field name="model">hr.attendance</field>
+			<field name="inherit_id" ref="hr_attendance.hr_attendance_view_form"/>
+			<field name="arch" type="xml">
+				<!-- In Mode -->
+				<field name="in_mode" position="after">
+					<field name="checkin_device_id" invisible="in_mode != 'device'"/>
+				</field>
+				<field name='in_ip_address' position="attributes">
+					<attribute name="invisible">in_mode == 'device'</attribute>
+				</field>
+				<field name='in_browser' position="attributes">
+					<attribute name="invisible">in_mode == 'device'</attribute>
+				</field>
+				<xpath expr="//label[@for='in_country_name']/parent::*" position="attributes">
+					<attribute name="invisible">in_mode == 'device'</attribute>
+				</xpath>
+				<!-- Out Mode -->
+				<field name="out_mode" position="after">
+					<field name="checkout_device_id" invisible="out_mode != 'device'"/>
+				</field>
+				<field name='out_ip_address' position="attributes">
+					<attribute name="invisible">out_mode == 'device'</attribute>
+				</field>
+				<field name='out_browser' position="attributes">
+					<attribute name="invisible">out_mode == 'device'</attribute>
+				</field>
+				<xpath expr="//label[@for='out_country_name']/parent::*" position="attributes">
+					<attribute name="invisible">in_mode == 'device'</attribute>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>

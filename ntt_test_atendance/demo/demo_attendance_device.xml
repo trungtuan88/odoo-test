@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Demo Attendance Device -->
+        <record id="demo_attendance_device_main" model="attendance.device">
+            <field name="name">Demo ZKTeco Device - Main Door</field>
+            <field name="description">This is a demo device for testing purposes. Thiết bị demo để test hệ thống chấm công ZKTeco.</field>
+            <field name="state">confirmed</field>
+            <field name="serialnumber">DEMO-ZK-12345</field>
+            <field name="connection_method">adms</field>
+            <field name="location_id" ref="demo_device_location_main_entrance"/>
+            <field name="timezone">Asia/Ho_Chi_Minh</field>
+            <!-- Information for the device -->
+            <field name="device_name">Demo ZKTeco Device - Main Door</field>
+            <field name="oem_vendor">ZKTeco</field>
+            <field name="push_ver">2.2.14</field>
+            <field name="ip">192.168.10.100</field>
+            <field name="platform">ZAM170_TFT</field>
+            <field name="fw_version">ZAM170-NF-Ver1.5.40</field>
+            <field name="fp_version">10</field>
+            <field name="face_version">58</field>
+        </record>
+
+    </data>
+</odoo>

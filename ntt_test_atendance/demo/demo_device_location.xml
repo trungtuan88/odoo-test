@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        
+        <!-- Address/Partner for Work Location -->
+        <record id="demo_address_office" model="res.partner">
+            <field name="name">Demo Office Address - ZKTeco</field>
+            <field name="street">123 Demo Street</field>
+            <field name="city">Ho Chi Minh City</field>
+            <field name="country_id" ref="base.vn"/>
+            <field name="type">other</field>
+        </record>
+
+        <!-- Work Location for Demo -->
+        <record id="demo_work_location_office" model="hr.work.location">
+            <field name="name">Demo Office - ZKTeco</field>
+            <field name="address_id" ref="demo_address_office"/>
+            <field name="active">True</field>
+        </record>
+
+        <!-- Device Location for Demo -->
+        <record id="demo_device_location_main_entrance" model="device.location">
+            <field name="name">Main Entrance - Demo</field>
+            <field name="hr_work_location_id" ref="demo_work_location_office"/>
+        </record>
+
+    </data>
+</odoo>
+
