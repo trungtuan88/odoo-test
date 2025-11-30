@@ -44,7 +44,7 @@
     },
     'images': [],
     'installable': True,
-    'price': 0.5,
+    'price': 1,
     'currency': 'EUR',
     'license': 'OPL-1',
 }
