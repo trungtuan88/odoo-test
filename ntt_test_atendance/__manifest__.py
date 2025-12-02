@@ -39,7 +39,7 @@
     },
     'images': ['static/description/main_screenshot.png'],
     'installable': True,
-    'price': 0.0,
+    'price': 1,
     'currency': 'EUR',
     'license': 'OPL-1',
 }
