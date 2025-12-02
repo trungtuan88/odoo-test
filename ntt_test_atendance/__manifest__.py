@@ -37,7 +37,7 @@
             'ntt_atendance_device_zkteco/static/src/components/**/*.js',
         ],
     },
-    'images': [],
+    'images': ['static/description/main_screenshot.png'],
     'installable': True,
     'price': 0.0,
     'currency': 'EUR',
