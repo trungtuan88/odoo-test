@@ -1,8 +1,10 @@
 {
     'name': "NTT Test Attendance",
     'summary': """
+    Integrate ZKTeco biometric attendance machines
     """,
-    'support': '',
+    'author': "NTT",
+    'support': 'apps.support@ntt.com',
     'category': 'Human Resources',
     'version': '1.0.0',
 
