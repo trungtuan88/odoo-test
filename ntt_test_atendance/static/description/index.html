@@ -9,128 +9,70 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <style>
-    :root{
-      --brandA:#00BBCE;
-      --brandB:#7F4282;
-      --ink:#21272B;
-      --muted:#4A4F55;
-      --soft:#EAF9FA;
-      --card:#FFFFFF;
-      --line:#F2F2F2;
-    }
-    .hero-wrap{
-      background: linear-gradient(135deg, var(--brandA) 0%, var(--brandB) 100%);
-      border-radius: 16px;
-      padding: 22px;
-    }
-    .hero-inner{
-      background: rgba(232, 249, 250, 0.96);
-      border-radius: 14px;
-      padding: 18px;
-    }
-    .badge-pill{
-      border-radius: 10px;
-      padding: 10px 16px;
-      color:#fff;
-      background: var(--brandA);
-      display: inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      font-weight: 600;
-      white-space: nowrap;
-    }
-    .cardx{
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 18px;
-      height: 100%;
-    }
-    .cardx h4{ font-size: 16px; font-weight: 700; margin-bottom: 6px; color: var(--ink); }
-    .cardx p{ font-size: 14px; margin-bottom: 0; color: var(--muted); line-height: 1.55; }
-    .section-soft{
-      background: var(--soft);
-      border-radius: 15px;
-      padding: 38px;
-    }
-    .section-gray{
-      background: #F7F7F7;
-      border-radius: 15px;
-      padding: 38px;
-    }
-    .kpi{
-      background: #fff;
-      border:1px solid var(--line);
-      border-radius: 12px;
-      padding: 14px 16px;
-      height: 100%;
-    }
-    .kpi b{ color: var(--ink); }
-    .small-note{ font-size: 13px; color: #EAF9FA; opacity: 0.95; }
-    .tab-pane section{ padding-top: 22px; padding-bottom: 22px; }
-    .list-check li{ margin-bottom: 8px; }
-    .hrline{ height:1px; background: var(--line); margin: 18px 0; }
-    .pill-outline{
-      border: 1px solid rgba(0,0,0,0.1);
-      border-radius: 999px;
-      padding: 6px 12px;
-      font-size: 13px;
-      background: #fff;
-      display:inline-block;
-      margin-right: 6px;
-      margin-bottom: 6px;
-    }
-  </style>
 </head>
 
 <body>
-<div class="container" style="max-width: 1100px;">
+<div class="container" style="max-width:1100px;">
 
   <!-- HERO -->
-  <section id="overview" style="margin-top: 1.5rem; margin-bottom: 1.25rem;">
-    <div class="hero-wrap">
-      <div class="hero-inner">
+  <section id="overview" style="margin-top:1.5rem;margin-bottom:1.25rem;">
+    <div style="background:linear-gradient(135deg,#1F6FEB 0%,#0B3D91 100%);border-radius:16px;padding:22px;">
+      <div style="background:rgba(239,246,255,0.96);border-radius:14px;padding:18px;">
         <div class="row align-items-center g-3">
           <div class="col-12 col-lg-4 text-center text-lg-start">
             <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
               <img src="icon.png" alt="Module Icon" style="width:72px;height:72px;border-radius:14px;">
               <div>
-                <div style="font-weight:800;color:var(--ink);font-size:18px;line-height:1.2;">Biometric Attendance Device</div>
-                <div style="color:var(--muted);font-size:13px;line-height:1.3;">ADMS / iClock Push Integration for Odoo</div>
+                <div style="font-weight:800;color:#111827;font-size:18px;line-height:1.2;">Biometric Attendance Device</div>
+                <div style="color:#374151;font-size:13px;line-height:1.3;">ADMS / iClock Push Integration for Odoo</div>
               </div>
             </div>
           </div>
 
           <div class="col-12 col-lg-8">
             <div class="d-flex flex-wrap justify-content-center justify-content-lg-end" style="gap:10px;">
-              <div class="badge-pill"><i class="fa fa-check-circle-o"></i> Odoo Community</div>
-              <div class="badge-pill"><i class="fa fa-check-circle-o"></i> Odoo Enterprise</div>
-              <div class="badge-pill"><i class="fa fa-check-circle-o"></i> Odoo.sh / On-Premise</div>
+              <div style="border-radius:10px;padding:10px 16px;color:#fff;background:#1F6FEB;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;white-space:nowrap;">
+                <i class="fa fa-check-circle-o"></i> Odoo Community
+              </div>
+              <div style="border-radius:10px;padding:10px 16px;color:#fff;background:#1F6FEB;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;white-space:nowrap;">
+                <i class="fa fa-check-circle-o"></i> Odoo Enterprise
+              </div>
+              <div style="border-radius:10px;padding:10px 16px;color:#fff;background:#1F6FEB;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;white-space:nowrap;">
+                <i class="fa fa-check-circle-o"></i> Odoo.sh / On-Premise
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="hrline"></div>
+        <div style="height:1px;background:#F2F2F2;margin:18px 0;"></div>
 
         <div class="row">
           <div class="col-12 text-center">
-            <h2 style="color:var(--ink); font-weight:900; font-size:34px; margin-bottom:10px;">
+            <h2 style="color:#111827;font-weight:900;font-size:34px;margin-bottom:10px;">
               Stop exporting Excel/USB. Turn every scan into Odoo attendance — automatically.
             </h2>
-            <p class="mx-auto" style="color:var(--muted); font-size:17px; line-height:26px; max-width: 900px; margin-bottom:12px;">
+
+            <p class="mx-auto" style="color:#374151;font-size:17px;line-height:26px;max-width:900px;margin-bottom:12px;">
               Connect ZKTeco-compatible devices (ADMS/iClock PUSH) directly to Odoo.
               Keep a clean audit trail, manage device users & biometrics, and synchronize attendances without middleware.
             </p>
 
-            <div class="d-flex flex-wrap justify-content-center" style="gap:10px; margin-top: 10px;">
-              <span class="pill-outline"><i class="fa fa-bolt"></i> Push-based (device-initiated)</span>
-              <span class="pill-outline"><i class="fa fa-ban"></i> No Middleware Required</span>
-              <span class="pill-outline"><i class="fa fa-key"></i> No API License Required</span>
-              <span class="pill-outline"><i class="fa fa-shield"></i> Serial-number Whitelisting</span>
-              <span class="pill-outline"><i class="fa fa-database"></i> Raw Logs + HR Attendance Sync</span>
+            <div class="d-flex flex-wrap justify-content-center" style="gap:10px;margin-top:10px;">
+              <span style="border:1px solid rgba(0,0,0,0.1);border-radius:999px;padding:6px 12px;font-size:13px;background:#fff;display:inline-block;margin-right:6px;margin-bottom:6px;">
+                <i class="fa fa-bolt"></i> Push-based (device-initiated)
+              </span>
+              <span style="border:1px solid rgba(0,0,0,0.1);border-radius:999px;padding:6px 12px;font-size:13px;background:#fff;display:inline-block;margin-right:6px;margin-bottom:6px;">
+                <i class="fa fa-ban"></i> No Middleware Required
+              </span>
+              <span style="border:1px solid rgba(0,0,0,0.1);border-radius:999px;padding:6px 12px;font-size:13px;background:#fff;display:inline-block;margin-right:6px;margin-bottom:6px;">
+                <i class="fa fa-key"></i> No API License Required
+              </span>
+              <span style="border:1px solid rgba(0,0,0,0.1);border-radius:999px;padding:6px 12px;font-size:13px;background:#fff;display:inline-block;margin-right:6px;margin-bottom:6px;">
+                <i class="fa fa-shield"></i> Serial-number Whitelisting
+              </span>
+              <span style="border:1px solid rgba(0,0,0,0.1);border-radius:999px;padding:6px 12px;font-size:13px;background:#fff;display:inline-block;margin-right:6px;margin-bottom:6px;">
+                <i class="fa fa-database"></i> Raw Logs + HR Attendance Sync
+              </span>
             </div>
           </div>
         </div>
@@ -139,11 +81,11 @@
       <!-- Main screenshot -->
       <div class="row mt-4">
         <div class="col-12">
-          <div class="text-center" style="border-radius: 18px; padding: 3px; background: linear-gradient(135deg, var(--brandA) 0%, var(--brandB) 100%);">
+          <div class="text-center" style="border-radius:18px;padding:3px;background:linear-gradient(135deg,#1F6FEB 0%,#0B3D91 100%);">
             <img src="screenshot.png" alt="Module Screenshot" class="img-fluid" loading="lazy"
-                 style="border-radius: 15px; display:block; width: 100%; height: auto;">
+                 style="border-radius:15px;display:block;width:100%;height:auto;">
           </div>
-          <p class="text-center small-note mt-2 mb-0">
+          <p class="text-center mt-2 mb-0" style="font-size:13px;color:#EFF6FF;opacity:0.95;">
             Tip: Your device must be able to reach your Odoo URL (public domain, VPN, or tunnel). Connection is device-initiated, so you don’t need Odoo to “dial into” the device.
           </p>
         </div>
@@ -153,22 +95,22 @@
 
   <!-- PAIN -> SOLUTION -->
   <section class="py-3">
-    <div class="section-soft">
+    <div style="background:#EFF6FF;border-radius:15px;padding:38px;">
       <div class="row g-4 align-items-center">
         <div class="col-12 col-lg-7">
-          <h2 class="mb-3" style="color:var(--ink); font-weight:900; font-size:28px;">
+          <h2 class="mb-3" style="color:#111827;font-weight:900;font-size:28px;">
             Built for HR accuracy & IT peace of mind
           </h2>
-          <p style="color:var(--muted); font-size:16px; line-height:1.65; margin-bottom: 14px;">
+          <p style="color:#374151;font-size:16px;line-height:1.65;margin-bottom:14px;">
             If you’re tired of:
           </p>
-          <ul class="list-check" style="color:var(--muted); font-size:15px; line-height:1.7;">
-            <li><b>Manual exports</b> (USB/Excel) and missing records.</li>
-            <li><b>Vendor software dependency</b> that doesn’t match your Odoo flow.</li>
-            <li><b>Multiple devices/sites</b> with timezone confusion and duplicated logs.</li>
-            <li><b>Slow payroll closing</b> because attendance data is not “clean” or traceable.</li>
+          <ul style="color:#374151;font-size:15px;line-height:1.7;padding-left:18px;margin-bottom:14px;">
+            <li style="margin-bottom:8px;"><b>Manual exports</b> (USB/Excel) and missing records.</li>
+            <li style="margin-bottom:8px;"><b>Vendor software dependency</b> that doesn’t match your Odoo flow.</li>
+            <li style="margin-bottom:8px;"><b>Multiple devices/sites</b> with timezone confusion and duplicated logs.</li>
+            <li style="margin-bottom:8px;"><b>Slow payroll closing</b> because attendance data is not “clean” or traceable.</li>
           </ul>
-          <p style="color:var(--muted); font-size:15px; line-height:1.65; margin-bottom:0;">
+          <p style="color:#374151;font-size:15px;line-height:1.65;margin-bottom:0;">
             This module gives you <b>direct PUSH integration</b> + <b>raw log retention</b> + <b>HR attendance synchronization</b> —
             so you can trust the numbers when it’s time to pay people.
           </p>
@@ -177,25 +119,25 @@
         <div class="col-12 col-lg-5">
           <div class="row g-3">
             <div class="col-12">
-              <div class="kpi">
-                <b><i class="fa fa-clock-o"></i> Real-time or scheduled upload</b><br>
-                <span style="color:var(--muted);font-size:14px;">
+              <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:14px 16px;height:100%;">
+                <b style="color:#111827;"><i class="fa fa-clock-o"></i> Real-time or scheduled upload</b><br>
+                <span style="color:#374151;font-size:14px;">
                   Choose RealTime push or use TransTimes/TransInterval to control when data is sent.
                 </span>
               </div>
             </div>
             <div class="col-12">
-              <div class="kpi">
-                <b><i class="fa fa-random"></i> Smart incremental sync</b><br>
-                <span style="color:var(--muted);font-size:14px;">
+              <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:14px 16px;height:100%;">
+                <b style="color:#111827;"><i class="fa fa-random"></i> Smart incremental sync</b><br>
+                <span style="color:#374151;font-size:14px;">
                   Uses device stamps (ATTLOG/OPERLOG/BIODATA...) to avoid re-downloading old data.
                 </span>
               </div>
             </div>
             <div class="col-12">
-              <div class="kpi">
-                <b><i class="fa fa-lock"></i> Controlled access</b><br>
-                <span style="color:var(--muted);font-size:14px;">
+              <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:14px 16px;height:100%;">
+                <b style="color:#111827;"><i class="fa fa-lock"></i> Controlled access</b><br>
+                <span style="color:#374151;font-size:14px;">
                   Only devices you confirm (by Serial Number) can push data into your Odoo.
                 </span>
               </div>
@@ -209,107 +151,124 @@
 
   <!-- KEY FEATURES GRID -->
   <section class="py-3">
-    <div class="section-gray">
-      <h2 class="text-center mb-2" style="color:var(--ink); font-weight:900; font-size:28px;">Key features that customers actually buy for</h2>
-      <p class="text-center mx-auto mb-4" style="max-width: 860px; color:var(--muted); font-size:16px; line-height:1.65;">
+    <div style="background:#F7F7F7;border-radius:15px;padding:38px;">
+      <h2 class="text-center mb-2" style="color:#111827;font-weight:900;font-size:28px;">
+        Key features that customers actually buy for
+      </h2>
+      <p class="text-center mx-auto mb-4" style="max-width:860px;color:#374151;font-size:16px;line-height:1.65;">
         Not “nice to have”. These are the features that remove daily pain and reduce payroll risk.
       </p>
 
       <div class="row g-4">
         <div class="col-md-6 col-lg-4 d-flex">
-          <div class="cardx">
+          <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
             <div class="d-flex align-items-start gap-3">
-              <i class="fa fa-bolt" style="font-size:28px;color:var(--brandB); margin-top:2px;"></i>
+              <i class="fa fa-bolt" style="font-size:28px;color:#0B3D91;margin-top:2px;"></i>
               <div>
-                <h4>Push attendance to Odoo</h4>
-                <p>Employees scan → device sends data → you keep a raw log record and later sync to <b>hr.attendance</b>.</p>
+                <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Push attendance to Odoo</h4>
+                <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+                  Employees scan → device sends data → you keep a raw log record and later sync to <b>hr.attendance</b>.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 d-flex">
-          <div class="cardx">
+          <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
             <div class="d-flex align-items-start gap-3">
-              <i class="fa fa-database" style="font-size:28px;color:var(--brandB); margin-top:2px;"></i>
+              <i class="fa fa-database" style="font-size:28px;color:#0B3D91;margin-top:2px;"></i>
               <div>
-                <h4>Raw logs (audit trail)</h4>
-                <p>Store the original device record (timestamp/status/verify mode). Duplicates are prevented at database level.</p>
+                <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Raw logs (audit trail)</h4>
+                <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+                  Store the original device record (timestamp/status/verify mode). Duplicates are prevented at database level.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 d-flex">
-          <div class="cardx">
+          <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
             <div class="d-flex align-items-start gap-3">
-              <i class="fa fa-sitemap" style="font-size:28px;color:var(--brandB); margin-top:2px;"></i>
+              <i class="fa fa-sitemap" style="font-size:28px;color:#0B3D91;margin-top:2px;"></i>
               <div>
-                <h4>Multi-device & multi-location</h4>
-                <p>Manage devices by company, location, and timezone. Keep consistent processing across sites.</p>
+                <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Multi-device & multi-location</h4>
+                <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+                  Manage devices by company, location, and timezone. Keep consistent processing across sites.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 d-flex">
-          <div class="cardx">
+          <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
             <div class="d-flex align-items-start gap-3">
-              <i class="fa fa-sliders" style="font-size:28px;color:var(--brandB); margin-top:2px;"></i>
+              <i class="fa fa-sliders" style="font-size:28px;color:#0B3D91;margin-top:2px;"></i>
               <div>
-                <h4>Fine-grained upload settings</h4>
-                <p>Control upload behavior using RealTime / TransTimes / TransInterval and TransFlag (what data tables to sync).</p>
+                <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Fine-grained upload settings</h4>
+                <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+                  Control upload behavior using RealTime / TransTimes / TransInterval and TransFlag (what data tables to sync).
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 d-flex">
-          <div class="cardx">
+          <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
             <div class="d-flex align-items-start gap-3">
-              <i class="fa fa-users" style="font-size:28px;color:var(--brandB); margin-top:2px;"></i>
+              <i class="fa fa-users" style="font-size:28px;color:#0B3D91;margin-top:2px;"></i>
               <div>
-                <h4>Device user management</h4>
-                <p>Upload employees to selected devices (badge/barcode as PIN). Keep device users aligned with Odoo employees.</p>
+                <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Device user management</h4>
+                <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+                  Upload employees to selected devices (badge/barcode as PIN). Keep device users aligned with Odoo employees.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 d-flex">
-          <div class="cardx">
+          <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
             <div class="d-flex align-items-start gap-3">
-              <i class="fa fa-fingerprint" style="font-size:28px;color:var(--brandB); margin-top:2px;"></i>
+              <i class="fa fa-fingerprint" style="font-size:28px;color:#0B3D91;margin-top:2px;"></i>
               <div>
-                <h4>Biometric templates (as supported)</h4>
-                <p>Store biometric templates uploaded by the device (fingerprint/face/vein/etc. depending on model). Includes template hashing to identify duplicates.</p>
+                <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Biometric templates (as supported)</h4>
+                <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+                  Store biometric templates uploaded by the device (fingerprint/face/vein/etc. depending on model). Includes template hashing to identify duplicates.
+                </p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="row g-4 mt-1">
         <div class="col-md-6 d-flex">
-          <div class="cardx">
+          <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
             <div class="d-flex align-items-start gap-3">
-              <i class="fa fa-terminal" style="font-size:28px;color:var(--brandB); margin-top:2px;"></i>
+              <i class="fa fa-terminal" style="font-size:28px;color:#0B3D91;margin-top:2px;"></i>
               <div>
-                <h4>Command queue (track success/failure)</h4>
-                <p>Send commands from Odoo to device, track return codes, and keep an execution history for troubleshooting.</p>
+                <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Command queue (track success/failure)</h4>
+                <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+                  Send commands from Odoo to device, track return codes, and keep an execution history for troubleshooting.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 d-flex">
-          <div class="cardx">
+          <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
             <div class="d-flex align-items-start gap-3">
-              <i class="fa fa-download" style="font-size:28px;color:var(--brandB); margin-top:2px;"></i>
+              <i class="fa fa-download" style="font-size:28px;color:#0B3D91;margin-top:2px;"></i>
               <div>
-                <h4>Download attendance by date range</h4>
-                <p>On-demand historical download (e.g., payroll closing) using a device command with StartTime/EndTime.</p>
+                <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Download attendance by date range</h4>
+                <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+                  On-demand historical download (e.g., payroll closing) using a device command with StartTime/EndTime.
+                </p>
               </div>
             </div>
           </div>
@@ -321,7 +280,7 @@
 
   <!-- TABS -->
   <div id="tabs" class="px-0 mt-2">
-    <ul class="nav nav-tabs justify-content-center bg-white py-2" id="myTab" role="tablist" style="border-radius: 8px 8px 0 0;">
+    <ul class="nav nav-tabs justify-content-center bg-white py-2" id="myTab" role="tablist" style="border-radius:8px 8px 0 0;">
       <li class="nav-item" role="presentation">
         <a class="nav-link active" id="setup-tab" data-bs-toggle="tab" href="#setup" role="tab"
            aria-controls="setup" aria-selected="true"
@@ -355,20 +314,20 @@
     </ul>
   </div>
 
-  <div class="tab-content" id="myTabContent" style="background:#fff;border:1px solid var(--line);border-top:none;border-radius:0 0 12px 12px;padding: 10px 18px;">
+  <div class="tab-content" id="myTabContent" style="background:#fff;border:1px solid #F2F2F2;border-top:none;border-radius:0 0 12px 12px;padding:10px 18px;">
 
     <!-- SETUP -->
     <div class="tab-pane fade show active" id="setup" role="tabpanel" aria-labelledby="setup-tab">
-      <section>
+      <section style="padding-top:22px;padding-bottom:22px;">
         <div class="row g-4 align-items-center">
           <div class="col-12 col-lg-7">
-            <h3 style="color:var(--ink);font-weight:900;font-size:22px;">Step-by-step setup (no middleware)</h3>
-            <ol style="color:var(--muted);font-size:15px;line-height:1.7;">
+            <h3 style="color:#111827;font-weight:900;font-size:22px;">Step-by-step setup (no middleware)</h3>
+            <ol style="color:#374151;font-size:15px;line-height:1.7;padding-left:18px;">
               <li><b>Install</b> the module in your Odoo database.</li>
               <li><b>Create a device record</b> with Serial Number, timezone, and location. Keep it in <b>Draft</b> until you’re ready.</li>
               <li><b>Confirm</b> the device in Odoo to allow it to connect (whitelisting by Serial Number).</li>
               <li>On the device, go to <b>Comm</b> → <b>Cloud Server Setting</b> (or ADMS) and set:
-                <ul style="margin-top:6px;">
+                <ul style="margin-top:6px;color:#374151;font-size:15px;line-height:1.7;padding-left:18px;">
                   <li><b>Server Address</b>: your Odoo domain/IP reachable from the device</li>
                   <li><b>Port</b>: usually 8069 (or your reverse proxy port)</li>
                 </ul>
@@ -376,16 +335,16 @@
               <li>Done. The device starts pushing data. You can also run <b>Download Attendance</b> by date range when needed.</li>
             </ol>
 
-            <div class="alert alert-info mb-0" style="border-radius: 12px;">
+            <div class="alert alert-info mb-0" style="border-radius:12px;">
               <b>Important:</b> Push means the device initiates the connection.
               Your Odoo endpoint must still be reachable from the device network (public domain, VPN, or tunnel).
             </div>
           </div>
 
           <div class="col-12 col-lg-5">
-            <div class="cardx">
-              <h4 style="font-size:17px;">What you’ll see after setup</h4>
-              <ul style="color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:0;">
+            <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
+              <h4 style="font-size:17px;font-weight:700;margin-bottom:8px;color:#111827;">What you’ll see after setup</h4>
+              <ul style="color:#374151;font-size:14px;line-height:1.7;margin-bottom:0;padding-left:18px;">
                 <li>Online/offline status based on ping & last seen</li>
                 <li>Raw logs flowing into Odoo</li>
                 <li>Scheduled sync into HR Attendance (or manual sync)</li>
@@ -393,12 +352,12 @@
               </ul>
             </div>
 
-            <div class="cardx mt-3">
+            <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;margin-top:12px;">
               <div class="d-flex align-items-center gap-3">
                 <img src="finger.png" alt="Fingerprint" style="width:64px;height:64px;border-radius:14px;">
                 <div>
-                  <div style="font-weight:800;color:var(--ink);">Remote fingerprint enrollment</div>
-                  <div style="color:var(--muted);font-size:14px;line-height:1.5;">
+                  <div style="font-weight:800;color:#111827;">Remote fingerprint enrollment</div>
+                  <div style="color:#374151;font-size:14px;line-height:1.5;">
                     Trigger enrollment from Odoo to guide the user at the device.
                   </div>
                 </div>
@@ -407,7 +366,7 @@
 
             <!-- Optional video block: replace VIDEO_ID -->
             <!--
-            <div class="mt-3" style="border-radius:12px; overflow:hidden; border:1px solid var(--line);">
+            <div class="mt-3" style="border-radius:12px; overflow:hidden; border:1px solid #F2F2F2;">
               <div class="ratio ratio-16x9">
                 <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Demo" allowfullscreen></iframe>
               </div>
@@ -420,19 +379,19 @@
 
     <!-- DETAILED FEATURES -->
     <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="features-tab">
-      <section>
+      <section style="padding-top:22px;padding-bottom:22px;">
         <div class="row g-4">
           <div class="col-12 col-lg-6">
-            <h3 style="color:var(--ink);font-weight:900;font-size:22px;">Attendance data lifecycle</h3>
-            <ul style="color:var(--muted);font-size:15px;line-height:1.7;">
+            <h3 style="color:#111827;font-weight:900;font-size:22px;">Attendance data lifecycle</h3>
+            <ul style="color:#374151;font-size:15px;line-height:1.7;padding-left:18px;">
               <li><b>Raw capture</b>: device attendance records are saved as raw lines (unique per PIN/device/timestamp).</li>
               <li><b>Status mapping</b>: status codes are mapped to check-in / check-out / unknown.</li>
               <li><b>HR sync</b>: scheduler converts raw lines into <b>hr.attendance</b> for payroll-ready reporting.</li>
               <li><b>Traceability</b>: keep the raw line linked to HR attendance for audits.</li>
             </ul>
 
-            <h3 class="mt-4" style="color:var(--ink);font-weight:900;font-size:22px;">Device settings you control</h3>
-            <ul style="color:var(--muted);font-size:15px;line-height:1.7;">
+            <h3 class="mt-4" style="color:#111827;font-weight:900;font-size:22px;">Device settings you control</h3>
+            <ul style="color:#374151;font-size:15px;line-height:1.7;padding-left:18px;">
               <li><b>RealTime</b>: push instantly when data is generated.</li>
               <li><b>TransTimes / TransInterval</b>: schedule periodic uploads for bandwidth control.</li>
               <li><b>TransFlag</b>: select which data categories the device auto-uploads.</li>
@@ -441,16 +400,16 @@
           </div>
 
           <div class="col-12 col-lg-6">
-            <h3 style="color:var(--ink);font-weight:900;font-size:22px;">Users & biometrics</h3>
-            <ul style="color:var(--muted);font-size:15px;line-height:1.7;">
+            <h3 style="color:#111827;font-weight:900;font-size:22px;">Users & biometrics</h3>
+            <ul style="color:#374151;font-size:15px;line-height:1.7;padding-left:18px;">
               <li><b>Upload employees</b> to one or many devices (barcode/badge as PIN).</li>
               <li><b>Remote fingerprint enrollment</b> from Odoo (guided at device).</li>
               <li><b>Biometric templates</b>: store templates uploaded by the device (type depends on your model).</li>
               <li><b>Template hash</b> helps identify duplicates and keep data clean.</li>
             </ul>
 
-            <h3 class="mt-4" style="color:var(--ink);font-weight:900;font-size:22px;">Command & troubleshooting</h3>
-            <ul style="color:var(--muted);font-size:15px;line-height:1.7;">
+            <h3 class="mt-4" style="color:#111827;font-weight:900;font-size:22px;">Command & troubleshooting</h3>
+            <ul style="color:#374151;font-size:15px;line-height:1.7;padding-left:18px;">
               <li><b>Command queue</b> with Draft → Sent → Done/Error statuses.</li>
               <li><b>Return codes</b> are stored for diagnosis (timeouts, device busy, invalid parameters...).</li>
               <li><b>On-demand downloads</b> (e.g., ATTLOG by date range) for payroll closing.</li>
@@ -467,13 +426,13 @@
 
     <!-- REQUIREMENTS -->
     <div class="tab-pane fade" id="requirements" role="tabpanel" aria-labelledby="requirements-tab">
-      <section>
-        <h3 style="color:var(--ink);font-weight:900;font-size:22px;">Compatibility checklist</h3>
+      <section style="padding-top:22px;padding-bottom:22px;">
+        <h3 style="color:#111827;font-weight:900;font-size:22px;">Compatibility checklist</h3>
         <div class="row g-4 mt-1">
           <div class="col-12 col-lg-6">
-            <div class="cardx">
-              <h4><i class="fa fa-check"></i> Device requirements</h4>
-              <ul style="color:var(--muted);font-size:14px;line-height:1.7;">
+            <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
+              <h4 style="font-size:16px;font-weight:700;margin-bottom:8px;color:#111827;"><i class="fa fa-check"></i> Device requirements</h4>
+              <ul style="color:#374151;font-size:14px;line-height:1.7;padding-left:18px;margin-bottom:0;">
                 <li>Your device must support <b>ADMS / iClock Push</b> (often shown as <b>Cloud Server Setting</b> in Comm menu).</li>
                 <li>Device should be in <b>Time & Attendance</b> mode (not “Access Control only”).</li>
                 <li>Device must have network connectivity (Ethernet/Wi-Fi) and be able to reach your Odoo URL.</li>
@@ -482,9 +441,9 @@
           </div>
 
           <div class="col-12 col-lg-6">
-            <div class="cardx">
-              <h4><i class="fa fa-check"></i> Odoo requirements</h4>
-              <ul style="color:var(--muted);font-size:14px;line-height:1.7;">
+            <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
+              <h4 style="font-size:16px;font-weight:700;margin-bottom:8px;color:#111827;"><i class="fa fa-check"></i> Odoo requirements</h4>
+              <ul style="color:#374151;font-size:14px;line-height:1.7;padding-left:18px;margin-bottom:0;">
                 <li>Depends on <b>hr_attendance</b>.</li>
                 <li>Works with <b>Odoo Community / Enterprise</b> (and Odoo.sh if devices can reach the domain).</li>
                 <li>Recommended: dedicated domain/subdomain per database when multi-db hosting.</li>
@@ -493,7 +452,7 @@
           </div>
         </div>
 
-        <div class="mt-3" style="color:var(--muted); font-size:14px; line-height:1.7;">
+        <div class="mt-3" style="color:#374151;font-size:14px;line-height:1.7;">
           <b>How to quickly check device compatibility:</b> On the device, go to <b>Comm</b> and look for
           <b>Cloud Server Setting</b> (or ADMS). If it exists, the device is typically compatible.
         </div>
@@ -502,60 +461,72 @@
 
     <!-- FAQ -->
     <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
-      <section>
-        <h3 style="color:var(--ink);font-weight:900;font-size:22px;">FAQ</h3>
+      <section style="padding-top:22px;padding-bottom:22px;">
+        <h3 style="color:#111827;font-weight:900;font-size:22px;">FAQ</h3>
 
-        <div class="cardx mt-3">
-          <h4>Do I need middleware or a local PC?</h4>
-          <p>No. The device pushes directly to Odoo via ADMS/iClock endpoints, and Odoo manages the queue + synchronization.</p>
+        <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;margin-top:12px;">
+          <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Do I need middleware or a local PC?</h4>
+          <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+            No. The device pushes directly to Odoo via ADMS/iClock endpoints, and Odoo manages the queue + synchronization.
+          </p>
         </div>
 
-        <div class="cardx mt-3">
-          <h4>Do I need to open ports on the device?</h4>
-          <p>The connection is device-initiated, so Odoo doesn’t “connect into” the device.
-             You still need an Odoo URL reachable by the device network (public domain, VPN, or tunnel).</p>
+        <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;margin-top:12px;">
+          <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Do I need to open ports on the device?</h4>
+          <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+            The connection is device-initiated, so Odoo doesn’t “connect into” the device.
+            You still need an Odoo URL reachable by the device network (public domain, VPN, or tunnel).
+          </p>
         </div>
 
-        <div class="cardx mt-3">
-          <h4>What happens if the device goes offline?</h4>
-          <p>When the device reconnects, it can continue pushing data. You can also download attendance by date range for recovery.</p>
+        <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;margin-top:12px;">
+          <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">What happens if the device goes offline?</h4>
+          <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+            When the device reconnects, it can continue pushing data. You can also download attendance by date range for recovery.
+          </p>
         </div>
 
-        <div class="cardx mt-3">
-          <h4>Can I sync only a specific date range for payroll closing?</h4>
-          <p>Yes. Use the download wizard to request ATTLOG between StartTime/EndTime (command-based).</p>
+        <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;margin-top:12px;">
+          <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Can I sync only a specific date range for payroll closing?</h4>
+          <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+            Yes. Use the download wizard to request ATTLOG between StartTime/EndTime (command-based).
+          </p>
         </div>
 
-        <div class="cardx mt-3">
-          <h4>Does it support biometrics like face or vein?</h4>
-          <p>The module can store biometric templates uploaded by the device (type depends on your device capabilities).
-             Remote enrollment from Odoo is available for fingerprint (guided at device).</p>
+        <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;margin-top:12px;">
+          <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Does it support biometrics like face or vein?</h4>
+          <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+            The module can store biometric templates uploaded by the device (type depends on your device capabilities).
+            Remote enrollment from Odoo is available for fingerprint (guided at device).
+          </p>
         </div>
       </section>
     </div>
 
     <!-- SUPPORT -->
     <div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">
-      <section>
+      <section style="padding-top:22px;padding-bottom:22px;">
         <div class="row g-4">
           <div class="col-12 col-lg-7">
-            <h3 style="color:var(--ink);font-weight:900;font-size:22px;">Support that reduces risk</h3>
-            <p style="color:var(--muted);font-size:15px;line-height:1.7;">
-              Attendance integration is mission-critical. If you sell this module, customers buy <b>confidence</b> as much as features.
+            <h3 style="color:#111827;font-weight:900;font-size:22px;">Support that reduces risk</h3>
+            <p style="color:#374151;font-size:15px;line-height:1.7;">
+              Attendance integration is mission-critical. Customers buy <b>confidence</b> as much as features.
               Add your support channels below so buyers feel safe to purchase.
             </p>
 
-            <div class="cardx">
-              <h4>Recommended support promise (copy/paste)</h4>
-              <p>
+            <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
+              <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">Recommended support promise (copy/paste)</h4>
+              <p style="font-size:14px;color:#374151;line-height:1.55;margin-bottom:12px;">
                 We provide:
                 <br>• Setup guidance (device + Odoo)
                 <br>• Compatibility check for your device model
                 <br>• Troubleshooting for connection & synchronization
                 <br>• Bug fixes within supported versions
               </p>
-              <div class="hrline"></div>
-              <p style="font-size:14px;color:var(--muted);margin-bottom:0;">
+
+              <div style="height:1px;background:#F2F2F2;margin:18px 0;"></div>
+
+              <p style="font-size:14px;color:#374151;margin-bottom:0;">
                 <b>Contact</b> (replace with your real info):
                 <br>• Email: <b>support@yourcompany.com</b>
                 <br>• Sales: <b>sales@yourcompany.com</b>
@@ -565,9 +536,9 @@
           </div>
 
           <div class="col-12 col-lg-5">
-            <div class="cardx">
-              <h4><i class="fa fa-star"></i> Increase conversion tips</h4>
-              <ul style="color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:0;">
+            <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;">
+              <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;"><i class="fa fa-star"></i> Increase conversion tips</h4>
+              <ul style="color:#374151;font-size:14px;line-height:1.7;margin-bottom:0;padding-left:18px;">
                 <li>Add a short demo video (60–120s).</li>
                 <li>Include a “Compatibility checklist” (already above).</li>
                 <li>Show 3 screenshots: Device list, Raw logs, HR Attendance result.</li>
@@ -575,9 +546,11 @@
               </ul>
             </div>
 
-            <div class="cardx mt-3">
-              <h4><i class="fa fa-shield"></i> Security note</h4>
-              <p>Only devices you confirm (by Serial Number) can push data. Keep unconfirmed devices blocked by default.</p>
+            <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;margin-top:12px;">
+              <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;"><i class="fa fa-shield"></i> Security note</h4>
+              <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
+                Only devices you confirm (by Serial Number) can push data. Keep unconfirmed devices blocked by default.
+              </p>
             </div>
           </div>
         </div>
@@ -586,11 +559,11 @@
 
     <!-- CHANGELOG -->
     <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
-      <section>
-        <h3 style="color:var(--ink);font-weight:900;font-size:22px;">Changelog</h3>
-        <div class="cardx mt-3">
-          <h4>1.0.0</h4>
-          <p>
+      <section style="padding-top:22px;padding-bottom:22px;">
+        <h3 style="color:#111827;font-weight:900;font-size:22px;">Changelog</h3>
+        <div style="background:#fff;border:1px solid #F2F2F2;border-radius:12px;padding:18px;height:100%;margin-top:12px;">
+          <h4 style="font-size:16px;font-weight:700;margin-bottom:6px;color:#111827;">1.0.0</h4>
+          <p style="font-size:14px;margin-bottom:0;color:#374151;line-height:1.55;">
             • Initial release: ADMS/iClock PUSH integration, device management, raw attendance log storage, HR attendance synchronization,
             command queue, date-range download, employee upload wizard, remote fingerprint enrollment.
           </p>
@@ -600,7 +573,7 @@
 
   </div>
 
-  <div class="text-center mt-4 mb-5" style="color:var(--muted); font-size:13px;">
+  <div class="text-center mt-4 mb-5" style="color:#374151;font-size:13px;">
     © Biometric Attendance Device – Make attendance boring again (in a good way).
   </div>
 
