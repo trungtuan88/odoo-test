@@ -1,7 +1,7 @@
 {
     'name': "NTT Test Attendance",
     'summary': """
-    Integrate ZKTeco biometric attendance machines
+    Easily and quickly connect biometric attendance devices with Odoo. No Middleware required. No API License required.
     """,
     'author': "NTT",
     'support': 'apps.support@ntt.com',
